@@ -1,0 +1,6 @@
+framework module Pods_TADA_HomeWorkTests {
+  umbrella header "Pods-TADA_HomeWorkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,6 +17,10 @@
 		184C917C265E999200C53BBD /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 184C917A265E999200C53BBD /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184C917F265E999200C53BBD /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; };
 		184C9180265E999200C53BBD /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27D37C326F81CE8F84C016DE /* Pods_TADA_HomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624E348E55BF40B5BEAF7A7D /* Pods_TADA_HomeWork.framework */; };
+		3E20F3A21B3D3A5BF0E0ED15 /* Pods_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F191BA246A24647F7CB95CDF /* Pods_Network.framework */; };
+		6B599FB26CECD37866D5FC52 /* Pods_TADA_HomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FF789CAB29D114B516A8D /* Pods_TADA_HomeWorkTests.framework */; };
+		F2BCCDC03880C53E096EE3CC /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D71F2FAD8F7CEB90830F925 /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		021ECC69ACD5B3E5BB60CEB0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1173345929DC7A2C31436A09 /* Pods-TADA_HomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork.release.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork.release.xcconfig"; sourceTree = "<group>"; };
 		184C9134265E8F3100C53BBD /* TADA_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TADA_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C9137265E8F3100C53BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184C9140265E8F3200C53BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +80,16 @@
 		184C9178265E999200C53BBD /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C917A265E999200C53BBD /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		184C917B265E999200C53BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E12DB1AD1CD14F8E1412C50 /* Pods-TADA_HomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork.debug.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork.debug.xcconfig"; sourceTree = "<group>"; };
+		5D71F2FAD8F7CEB90830F925 /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624E348E55BF40B5BEAF7A7D /* Pods_TADA_HomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TADA_HomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A06BA415812FAC17B99F269 /* Pods-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.debug.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.debug.xcconfig"; sourceTree = "<group>"; };
+		A15FF789CAB29D114B516A8D /* Pods_TADA_HomeWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TADA_HomeWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF5F83B1B16E66CCFF94DA0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork-TADA_HomeWorkUITests.release.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C29370B3492E9C550F944353 /* Pods-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.release.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.release.xcconfig"; sourceTree = "<group>"; };
+		F16FF3684B0DC24411B1A660 /* Pods-TADA_HomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWorkTests/Pods-TADA_HomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
+		F191BA246A24647F7CB95CDF /* Pods_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF7CE36879277B6892BFA7A /* Pods-TADA_HomeWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWorkTests.debug.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWorkTests/Pods-TADA_HomeWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184C917F265E999200C53BBD /* Network.framework in Frameworks */,
+				27D37C326F81CE8F84C016DE /* Pods_TADA_HomeWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B599FB26CECD37866D5FC52 /* Pods_TADA_HomeWorkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2BCCDC03880C53E096EE3CC /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E20F3A21B3D3A5BF0E0ED15 /* Pods_Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +137,8 @@
 				184C9158265E8F3300C53BBD /* TADA_HomeWorkUITests */,
 				184C9179265E999200C53BBD /* Network */,
 				184C9135265E8F3100C53BBD /* Products */,
+				5109A1DF863AFA870E759A58 /* Pods */,
+				2E82735E8FE446ECFFC5EDE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +273,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2E82735E8FE446ECFFC5EDE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F191BA246A24647F7CB95CDF /* Pods_Network.framework */,
+				624E348E55BF40B5BEAF7A7D /* Pods_TADA_HomeWork.framework */,
+				5D71F2FAD8F7CEB90830F925 /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework */,
+				A15FF789CAB29D114B516A8D /* Pods_TADA_HomeWorkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5109A1DF863AFA870E759A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A06BA415812FAC17B99F269 /* Pods-Network.debug.xcconfig */,
+				C29370B3492E9C550F944353 /* Pods-Network.release.xcconfig */,
+				2E12DB1AD1CD14F8E1412C50 /* Pods-TADA_HomeWork.debug.xcconfig */,
+				1173345929DC7A2C31436A09 /* Pods-TADA_HomeWork.release.xcconfig */,
+				021ECC69ACD5B3E5BB60CEB0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig */,
+				BFF5F83B1B16E66CCFF94DA0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.release.xcconfig */,
+				FAF7CE36879277B6892BFA7A /* Pods-TADA_HomeWorkTests.debug.xcconfig */,
+				F16FF3684B0DC24411B1A660 /* Pods-TADA_HomeWorkTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -269,10 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184C915E265E8F3300C53BBD /* Build configuration list for PBXNativeTarget "TADA_HomeWork" */;
 			buildPhases = (
+				F1B5A1E7DF3FD2D7E3F71126 /* [CP] Check Pods Manifest.lock */,
 				184C9130265E8F3100C53BBD /* Sources */,
 				184C9131265E8F3100C53BBD /* Frameworks */,
 				184C9132265E8F3100C53BBD /* Resources */,
 				184C9184265E999200C53BBD /* Embed Frameworks */,
+				35ED9A2189C57174E3D249B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184C9161265E8F3300C53BBD /* Build configuration list for PBXNativeTarget "TADA_HomeWorkTests" */;
 			buildPhases = (
+				3893D6038256C5E79D50F424 /* [CP] Check Pods Manifest.lock */,
 				184C9146265E8F3300C53BBD /* Sources */,
 				184C9147265E8F3300C53BBD /* Frameworks */,
 				184C9148265E8F3300C53BBD /* Resources */,
@@ -306,9 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184C9164265E8F3300C53BBD /* Build configuration list for PBXNativeTarget "TADA_HomeWorkUITests" */;
 			buildPhases = (
+				D753CB5BB487379A3385B575 /* [CP] Check Pods Manifest.lock */,
 				184C9151265E8F3300C53BBD /* Sources */,
 				184C9152265E8F3300C53BBD /* Frameworks */,
 				184C9153265E8F3300C53BBD /* Resources */,
+				4F2FA67D0DA008E0B81F16E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,6 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184C9181265E999200C53BBD /* Build configuration list for PBXNativeTarget "Network" */;
 			buildPhases = (
+				A23A04FE82729531BAAE96C5 /* [CP] Check Pods Manifest.lock */,
 				184C9173265E999200C53BBD /* Headers */,
 				184C9174265E999200C53BBD /* Sources */,
 				184C9175265E999200C53BBD /* Frameworks */,
@@ -416,6 +471,131 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35ED9A2189C57174E3D249B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3893D6038256C5E79D50F424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TADA_HomeWorkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F2FA67D0DA008E0B81F16E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23A04FE82729531BAAE96C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D753CB5BB487379A3385B575 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TADA_HomeWork-TADA_HomeWorkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B5A1E7DF3FD2D7E3F71126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TADA_HomeWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		184C9130265E8F3100C53BBD /* Sources */ = {
@@ -601,6 +781,7 @@
 		};
 		184C915F265E8F3300C53BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E12DB1AD1CD14F8E1412C50 /* Pods-TADA_HomeWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -621,6 +802,7 @@
 		};
 		184C9160265E8F3300C53BBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1173345929DC7A2C31436A09 /* Pods-TADA_HomeWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -641,6 +823,7 @@
 		};
 		184C9162265E8F3300C53BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF7CE36879277B6892BFA7A /* Pods-TADA_HomeWorkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -663,6 +846,7 @@
 		};
 		184C9163265E8F3300C53BBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16FF3684B0DC24411B1A660 /* Pods-TADA_HomeWorkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,6 +869,7 @@
 		};
 		184C9165265E8F3300C53BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021ECC69ACD5B3E5BB60CEB0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -705,6 +890,7 @@
 		};
 		184C9166265E8F3300C53BBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF5F83B1B16E66CCFF94DA0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -725,6 +911,7 @@
 		};
 		184C9182265E999200C53BBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A06BA415812FAC17B99F269 /* Pods-Network.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -752,6 +939,7 @@
 		};
 		184C9183265E999200C53BBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29370B3492E9C550F944353 /* Pods-Network.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
