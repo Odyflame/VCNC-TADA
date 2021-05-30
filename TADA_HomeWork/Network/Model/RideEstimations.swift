@@ -13,7 +13,8 @@ public class RideEstimations: Codable {
 
 public class RideEstimation: Codable {
     public let rideType: RideType
-    public let estimateCost: Int?
+    public let cost: Int?
+    public let originalCost: Int?
 }
 
 public class RideType: Codable {

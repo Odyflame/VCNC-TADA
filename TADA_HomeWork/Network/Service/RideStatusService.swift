@@ -7,6 +7,7 @@
 
 import Foundation
 import Moya
+import Alamofire
 
 enum RideStatusService {
     case getRideStatus(rideType: String)

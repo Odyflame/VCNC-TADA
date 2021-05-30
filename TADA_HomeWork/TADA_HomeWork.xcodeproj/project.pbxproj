@@ -17,6 +17,11 @@
 		184C917C265E999200C53BBD /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 184C917A265E999200C53BBD /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184C917F265E999200C53BBD /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; };
 		184C9180265E999200C53BBD /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		187B517426607D71008E25EB /* CarOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517326607D71008E25EB /* CarOptionView.swift */; };
+		187B517626607D85008E25EB /* CouponRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517526607D85008E25EB /* CouponRegisterView.swift */; };
+		187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517826608781008E25EB /* RideEstimationsViewModel.swift */; };
+		187B517B2660A9C7008E25EB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517A2660A9C7008E25EB /* String+.swift */; };
+		187B517D2660E37C008E25EB /* AlertCarAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */; };
 		18FB7A61265F925A0031BCD1 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A60265F925A0031BCD1 /* BaseURL.swift */; };
 		18FB7A63265F92950031BCD1 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A62265F92950031BCD1 /* BaseManager.swift */; };
 		18FB7A65265F92E40031BCD1 /* RideEstimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A64265F92E40031BCD1 /* RideEstimations.swift */; };
@@ -25,6 +30,7 @@
 		18FB7A6B265F94460031BCD1 /* RideEstimationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A6A265F94460031BCD1 /* RideEstimationsService.swift */; };
 		18FB7A6D265F9DDE0031BCD1 /* RideStatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A6C265F9DDE0031BCD1 /* RideStatusController.swift */; };
 		18FB7A6F265F9DEA0031BCD1 /* RideEstimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A6E265F9DEA0031BCD1 /* RideEstimationController.swift */; };
+		18FB7A73265FA18B0031BCD1 /* RegisterCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A72265FA18B0031BCD1 /* RegisterCouponViewController.swift */; };
 		27D37C326F81CE8F84C016DE /* Pods_TADA_HomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624E348E55BF40B5BEAF7A7D /* Pods_TADA_HomeWork.framework */; };
 		3E20F3A21B3D3A5BF0E0ED15 /* Pods_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F191BA246A24647F7CB95CDF /* Pods_Network.framework */; };
 		6B599FB26CECD37866D5FC52 /* Pods_TADA_HomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FF789CAB29D114B516A8D /* Pods_TADA_HomeWorkTests.framework */; };
@@ -88,6 +94,11 @@
 		184C9178265E999200C53BBD /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C917A265E999200C53BBD /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		184C917B265E999200C53BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187B517326607D71008E25EB /* CarOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOptionView.swift; sourceTree = "<group>"; };
+		187B517526607D85008E25EB /* CouponRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRegisterView.swift; sourceTree = "<group>"; };
+		187B517826608781008E25EB /* RideEstimationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationsViewModel.swift; sourceTree = "<group>"; };
+		187B517A2660A9C7008E25EB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCarAvailableView.swift; sourceTree = "<group>"; };
 		18FB7A60265F925A0031BCD1 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		18FB7A62265F92950031BCD1 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		18FB7A64265F92E40031BCD1 /* RideEstimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimations.swift; sourceTree = "<group>"; };
@@ -96,6 +107,7 @@
 		18FB7A6A265F94460031BCD1 /* RideEstimationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationsService.swift; sourceTree = "<group>"; };
 		18FB7A6C265F9DDE0031BCD1 /* RideStatusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideStatusController.swift; sourceTree = "<group>"; };
 		18FB7A6E265F9DEA0031BCD1 /* RideEstimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationController.swift; sourceTree = "<group>"; };
+		18FB7A72265FA18B0031BCD1 /* RegisterCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCouponViewController.swift; sourceTree = "<group>"; };
 		2E12DB1AD1CD14F8E1412C50 /* Pods-TADA_HomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork.debug.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork.debug.xcconfig"; sourceTree = "<group>"; };
 		5D71F2FAD8F7CEB90830F925 /* Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TADA_HomeWork_TADA_HomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		624E348E55BF40B5BEAF7A7D /* Pods_TADA_HomeWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TADA_HomeWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +184,7 @@
 		184C9136265E8F3100C53BBD /* TADA_HomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				187B517726608769008E25EB /* Model */,
 				184C916A265E93F900C53BBD /* Splash */,
 				184C9169265E931E00C53BBD /* ChooseOption */,
 				184C9168265E92DC00C53BBD /* RegisterCoupon */,
@@ -214,6 +227,7 @@
 		184C9168265E92DC00C53BBD /* RegisterCoupon */ = {
 			isa = PBXGroup;
 			children = (
+				18FB7A72265FA18B0031BCD1 /* RegisterCouponViewController.swift */,
 			);
 			path = RegisterCoupon;
 			sourceTree = "<group>";
@@ -222,6 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				184C916D265E955F00C53BBD /* ChooseOptionViewController.swift */,
+				187B517326607D71008E25EB /* CarOptionView.swift */,
+				187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */,
+				187B517526607D85008E25EB /* CouponRegisterView.swift */,
+				187B517826608781008E25EB /* RideEstimationsViewModel.swift */,
 			);
 			path = ChooseOption;
 			sourceTree = "<group>";
@@ -236,6 +254,7 @@
 		184C916F265E983800C53BBD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				187B517A2660A9C7008E25EB /* String+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -295,6 +314,13 @@
 				18FB7A6E265F9DEA0031BCD1 /* RideEstimationController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		187B517726608769008E25EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2E82735E8FE446ECFFC5EDE9 /* Frameworks */ = {
@@ -627,7 +653,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				184C916E265E955F00C53BBD /* ChooseOptionViewController.swift in Sources */,
+				18FB7A73265FA18B0031BCD1 /* RegisterCouponViewController.swift in Sources */,
+				187B517D2660E37C008E25EB /* AlertCarAvailableView.swift in Sources */,
+				187B517B2660A9C7008E25EB /* String+.swift in Sources */,
+				187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */,
 				184C9172265E985500C53BBD /* Colors.swift in Sources */,
+				187B517626607D85008E25EB /* CouponRegisterView.swift in Sources */,
+				187B517426607D71008E25EB /* CarOptionView.swift in Sources */,
 				184C9138265E8F3100C53BBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -957,6 +989,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Network/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,6 +1020,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Network/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
