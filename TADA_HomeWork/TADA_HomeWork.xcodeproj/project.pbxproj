@@ -22,6 +22,8 @@
 		187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517826608781008E25EB /* RideEstimationsViewModel.swift */; };
 		187B517B2660A9C7008E25EB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517A2660A9C7008E25EB /* String+.swift */; };
 		187B517D2660E37C008E25EB /* AlertCarAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */; };
+		188EC2D126637946008B4B38 /* ToastMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC2D026637946008B4B38 /* ToastMessageView.swift */; };
+		188EC2D32663975E008B4B38 /* RideStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC2D22663975E008B4B38 /* RideStatusViewModel.swift */; };
 		18FB7A61265F925A0031BCD1 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A60265F925A0031BCD1 /* BaseURL.swift */; };
 		18FB7A63265F92950031BCD1 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A62265F92950031BCD1 /* BaseManager.swift */; };
 		18FB7A65265F92E40031BCD1 /* RideEstimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A64265F92E40031BCD1 /* RideEstimations.swift */; };
@@ -99,6 +101,8 @@
 		187B517826608781008E25EB /* RideEstimationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationsViewModel.swift; sourceTree = "<group>"; };
 		187B517A2660A9C7008E25EB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCarAvailableView.swift; sourceTree = "<group>"; };
+		188EC2D026637946008B4B38 /* ToastMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessageView.swift; sourceTree = "<group>"; };
+		188EC2D22663975E008B4B38 /* RideStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideStatusViewModel.swift; sourceTree = "<group>"; };
 		18FB7A60265F925A0031BCD1 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		18FB7A62265F92950031BCD1 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		18FB7A64265F92E40031BCD1 /* RideEstimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimations.swift; sourceTree = "<group>"; };
@@ -184,7 +188,7 @@
 		184C9136265E8F3100C53BBD /* TADA_HomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				187B517726608769008E25EB /* Model */,
+				187B517726608769008E25EB /* ViewModel */,
 				184C916A265E93F900C53BBD /* Splash */,
 				184C9169265E931E00C53BBD /* ChooseOption */,
 				184C9168265E92DC00C53BBD /* RegisterCoupon */,
@@ -236,10 +240,10 @@
 			isa = PBXGroup;
 			children = (
 				184C916D265E955F00C53BBD /* ChooseOptionViewController.swift */,
+				188EC2D026637946008B4B38 /* ToastMessageView.swift */,
 				187B517326607D71008E25EB /* CarOptionView.swift */,
 				187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */,
 				187B517526607D85008E25EB /* CouponRegisterView.swift */,
-				187B517826608781008E25EB /* RideEstimationsViewModel.swift */,
 			);
 			path = ChooseOption;
 			sourceTree = "<group>";
@@ -316,11 +320,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		187B517726608769008E25EB /* Model */ = {
+		187B517726608769008E25EB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				187B517826608781008E25EB /* RideEstimationsViewModel.swift */,
+				188EC2D22663975E008B4B38 /* RideStatusViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2E82735E8FE446ECFFC5EDE9 /* Frameworks */ = {
@@ -659,8 +665,10 @@
 				187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */,
 				184C9172265E985500C53BBD /* Colors.swift in Sources */,
 				187B517626607D85008E25EB /* CouponRegisterView.swift in Sources */,
+				188EC2D32663975E008B4B38 /* RideStatusViewModel.swift in Sources */,
 				187B517426607D71008E25EB /* CarOptionView.swift in Sources */,
 				184C9138265E8F3100C53BBD /* AppDelegate.swift in Sources */,
+				188EC2D126637946008B4B38 /* ToastMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

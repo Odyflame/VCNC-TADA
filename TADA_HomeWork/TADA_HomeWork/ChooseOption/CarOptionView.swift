@@ -76,7 +76,7 @@ class CarOptionView: UIView {
             make.leading.equalTo(self).offset(10)
             make.top.equalTo(self).offset(11)
             make.bottom.equalTo(self).offset(-11)
-            make.width.equalTo(carImage.snp.height).multipliedBy(78/52)
+            make.width.equalTo(carImage.snp.height).multipliedBy(1.5)
         }
         
         carDescriptionStackView.snp.makeConstraints { make in
@@ -115,17 +115,5 @@ class CarOptionView: UIView {
         setNeedsLayout()
         self.originalCostLabel.attributedText = "예상 \(originalData)원".strikeThrough()
     }
-    
-//    func configureGesture(){
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
-//        addGestureRecognizer(tapGesture)
-//    }
-//
-//    @objc func tap(_ sender: UITapGestureRecognizer) {
-//        guard let name = self.carName.text else {
-//            return
-//        }
-//        self.delegate?.didTap(send: name)
-//    }
     
 }

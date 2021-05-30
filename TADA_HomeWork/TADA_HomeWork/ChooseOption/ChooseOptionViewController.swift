@@ -49,7 +49,9 @@ class ChooseOptionViewController: UIViewController {
     }
     
     var viewModel = RideEstimationsViewModel()
+    var toastViewModel = RideStatusViewModel()
     let disposeBag = DisposeBag()
+    
     var selectedOptionName = ""
     
     override func viewDidLoad() {
@@ -81,6 +83,13 @@ class ChooseOptionViewController: UIViewController {
                 }
                 
                 self.plusCarView.configure(data: result)
+                
+            }).disposed(by: disposeBag)
+        
+        toastViewModel.output.rideToast
+            .subscribe(onNext: { [weak self] result in
+                
+                self?.showToast(message: result)
                 
             }).disposed(by: disposeBag)
         
@@ -145,22 +154,49 @@ class ChooseOptionViewController: UIViewController {
     @objc
     func selectLiteOption(_ sender: UITapGestureRecognizer) {
         
-        liteCarView.backgroundColor = Color.skyblue
-        plusCarView.backgroundColor = Color.white
-        selectedOptionName = liteCarView.carName.text ?? ""
-        callButton.setTitle("\(liteCarView.carName) 호출", for: .normal)
+        updateOptionView(to: liteCarView, from: plusCarView)
     }
     
     @objc
     func selectPlusOption(_ sender: UITapGestureRecognizer) {
         
-        liteCarView.backgroundColor = Color.white
-        plusCarView.backgroundColor = Color.skyblue
-        selectedOptionName = plusCarView.carName.text ?? ""
-        callButton.setTitle("\(plusCarView.carName) 호출", for: .normal)
+        updateOptionView(to: plusCarView, from: liteCarView)
     }
     
-    func animateView(_ view: CarOptionView) {
+    func updateOptionView(to selectedView: CarOptionView, from deSelected: CarOptionView) {
         
+        selectedView.backgroundColor = Color.skyblue
+        deSelected.backgroundColor = Color.white
+        selectedOptionName = selectedView.carName.text ?? ""
+
+        UIView.animate(withDuration: 1,
+                       animations: {
+                        selectedView.carImage.transform = CGAffineTransform(scaleX: 1.25, y: 1.25)
+                        deSelected.carImage.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+                       },
+                       completion: nil)
+        
+        guard let callButtonText = selectedView.carName.text else {
+            callButton.setTitle("호출하기", for: .normal)
+            return
+        }
+        callButton.setTitle("\(callButtonText) 호출", for: .normal)
     }
+    
+    func showToast(message: String ) {
+        let toastLabel = ToastMessageView()
+        toastLabel.configure(message: message)
+        
+        self.view.addSubview(toastLabel)
+        UIView.animate(
+            withDuration: 4.0,
+            delay: 0.3,
+            options: .curveEaseOut) {
+            toastLabel.alpha = 0
+        } completion: { _ in
+            toastLabel.removeFromSuperview()
+        }
+
+    }
+    
 }
