@@ -39,6 +39,8 @@ class ChooseOptionViewController: UIViewController {
     
     lazy var couponView = CouponRegisterView().then {
         $0.backgroundColor = Color.white
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(gotoCouponRegisterView))
+        $0.addGestureRecognizer(gesture)
     }
     
     lazy var callButton = UIButton().then {
@@ -57,20 +59,24 @@ class ChooseOptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = Color.gray
-        
         configureLayout()
-        bindViewModel()
+        bindRx()
         viewModel.input.getRideEstimations()
     }
     
-    func bindViewModel() {
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    func bindRx() {
         viewModel.output.liteEstimation
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
+                    print("liteEstimation 왜안되지?")
                     return
                 }
-                
+                print("liteEstimation 왜되지?")
                 self.liteCarView.configure(data: result)
                 
             }).disposed(by: disposeBag)
@@ -79,9 +85,10 @@ class ChooseOptionViewController: UIViewController {
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
+                    print("liteEstimation 왜안되지?")
                     return
                 }
-                
+                print("plusEstimation 왜되지?")
                 self.plusCarView.configure(data: result)
                 
             }).disposed(by: disposeBag)
@@ -99,13 +106,15 @@ class ChooseOptionViewController: UIViewController {
         callButton.rx.tap
             .subscribe(onNext: {
                 
-                if self.couponView.isRegisterCoupon {
-                    self.presentAlert(title: self.selectedOptionName, message: self.couponView.couponStatus.text)
-                } else {
+                guard self.couponView.isRegisterCoupon,
+                      !self.selectedOptionName.isEmpty else {
                     self.presentAlert()
+                    return
                 }
+                self.presentAlert(title: self.selectedOptionName, message: self.couponView.couponStatus.text)
                 
             }).disposed(by: disposeBag)
+        
         
     }
     
@@ -141,8 +150,7 @@ class ChooseOptionViewController: UIViewController {
         }
         
         couponView.snp.makeConstraints { make in
-            make.leading.greaterThanOrEqualTo(contentView).offset(124)
-            make.trailing.greaterThanOrEqualTo(contentView).offset(-127)
+            make.centerX.equalTo(contentView)
             make.top.lessThanOrEqualTo(plusCarView.snp.bottom).offset(28)
             make.bottom.lessThanOrEqualTo(callButton.snp.top).offset(-28)
         }
@@ -159,9 +167,7 @@ class ChooseOptionViewController: UIViewController {
     func selectLiteOption(_ sender: UITapGestureRecognizer) {
         
         updateOptionView(to: liteCarView, from: plusCarView)
-        guard let text = liteCarView.carName.text else {
-            return
-        }
+        guard let text = liteCarView.carName.text else { return }
         toastViewModel.input.getToastMessage(message: text)
     }
     
@@ -169,11 +175,15 @@ class ChooseOptionViewController: UIViewController {
     func selectPlusOption(_ sender: UITapGestureRecognizer) {
         
         updateOptionView(to: plusCarView, from: liteCarView)
-        guard let text = plusCarView.carName.text else {
-            return
-        }
-        print("\(text)")
+        guard let text = plusCarView.carName.text else { return }
         toastViewModel.input.getToastMessage(message: text)
+    }
+    
+    @objc
+    func gotoCouponRegisterView(_ sender: UITapGestureRecognizer) {
+        let viewController = RegisterCouponViewController()
+        viewController.delegate = self
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func updateOptionView(to selectedView: CarOptionView, from deSelected: CarOptionView) {
@@ -216,4 +226,13 @@ class ChooseOptionViewController: UIViewController {
         }
     }
     
+}
+
+extension ChooseOptionViewController: RegisterCouponDelegate {
+    func registerCoupon(coupon: String) {
+        
+        viewModel.input.getRideEstimationsWithCoupon(coupon: coupon)
+        self.couponView.configure(couponName: coupon)
+        
+    }
 }

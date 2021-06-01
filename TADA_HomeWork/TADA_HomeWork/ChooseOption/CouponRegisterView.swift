@@ -12,6 +12,11 @@ import Network
 
 class CouponRegisterView: UIView {
 
+    enum Constant {
+        static let couponEmptyLabel = "보유한 쿠폰 없음"
+        static let couponRegisterdLabel = "쿠폰 적용됨"
+    }
+    
     lazy var couponStackView = UIStackView(arrangedSubviews: [couponImage, couponDescriptionStackView]).then {
         $0.axis = .horizontal
         $0.spacing = 5
@@ -27,7 +32,7 @@ class CouponRegisterView: UIView {
     }
     
     lazy var couponStatus = UILabel().then {
-        $0.text = "보유한 쿠폰 없음"
+        $0.text = Constant.couponEmptyLabel
         $0.textColor = Color.couponPlaceHolder
         $0.font = .systemFont(ofSize: 12)
     }
@@ -60,11 +65,14 @@ class CouponRegisterView: UIView {
     func configure(couponName: String) {
         couponDescription.text = couponName
         couponStatus.textColor = Color.couponRegisterColor
+        couponStatus.text = Constant.couponRegisterdLabel
         isRegisterCoupon = true
     }
     
     func configureInit() {
         couponDescription.text = ""
         couponStatus.textColor = Color.couponPlaceHolder
+        couponStatus.text = Constant.couponEmptyLabel
+        isRegisterCoupon = false
     }
 }

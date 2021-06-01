@@ -27,7 +27,7 @@ class RegisterCouponViewController: UIViewController {
     }
     
     lazy var couponRegisterDescriptionLabel = UILabel().then {
-        $0.textColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        $0.textColor = Color.black
         $0.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 14)
         $0.text = Constant.CouponResisterText
     }
@@ -43,12 +43,13 @@ class RegisterCouponViewController: UIViewController {
     }
     
     lazy var registerButton = UIButton().then {
-        $0.titleLabel?.text = Constant.RegisterText
-        $0.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 12)
-        $0.titleLabel?.textColor = .black
         $0.layer.cornerRadius = 2
         $0.layer.borderWidth = 1
         $0.layer.borderColor = Color.buttonBorderColor?.cgColor
+        
+        $0.setTitle(Constant.RegisterText, for: .normal)
+        $0.setTitleColor(Color.black, for: .normal)
+        $0.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 12)
     }
     
     let disposeBag = DisposeBag()
@@ -108,20 +109,23 @@ class RegisterCouponViewController: UIViewController {
                 
                 guard let text = self?.couponTextField.text,
                       text != "" else {
-                    let alertView = UIAlertController(title: Constant.RegisterError, message: Constant.ResigerRightText, preferredStyle: .alert)
-                    
-                    self?.present(alertView, animated: true, completion: nil)
-                    
-                    let when = DispatchTime.now() + 1
-                    DispatchQueue.main.asyncAfter(deadline: when){
-                        alertView.dismiss(animated: true, completion: nil)
-                    }
-                    
+                    self?.showCouponAlertView()
                     return
                 }
                 
                 self?.delegate?.registerCoupon(coupon: text)
                 self?.navigationController?.popViewController(animated: true)
             }.disposed(by: disposeBag)
+    }
+    
+    private func showCouponAlertView() {
+        let alertView = UIAlertController(title: Constant.RegisterError, message: Constant.ResigerRightText, preferredStyle: .alert)
+        
+        self.present(alertView, animated: true, completion: nil)
+        
+        let when = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alertView.dismiss(animated: true, completion: nil)
+        }
     }
 }

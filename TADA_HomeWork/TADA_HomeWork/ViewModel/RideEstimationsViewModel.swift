@@ -47,7 +47,7 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
             .subscribe { [weak self] response in
                 guard let self = self,
                       let element = response.element else {
-                    print("getRideEstimations왜 안돼")
+                    
                     return
                 }
                 
@@ -64,7 +64,7 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
             .subscribe { [weak self] response in
                 guard let self = self,
                       let element = response.element else {
-                    print("getRideEstimationsWithCoupon왜 안돼")
+                    
                     return
                 }
                 
@@ -75,6 +75,7 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
     }
     
     private func setEstimationValue(value: [RideEstimation]) {
+
         value.forEach {
             switch $0.rideType.value {
             case "LITE": self.liteEstimation.accept($0)
