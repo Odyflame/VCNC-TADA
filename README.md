@@ -4,8 +4,7 @@
 ## 🛠 Development Environment and Library
 
 <div align="center">
-
-# VCNC-TADA-HomeWork
+  
 [![Swift](https://img.shields.io/badge/swift-v5.3-orange?logo=swift)](https://developer.apple.com/kr/swift/)
 [![Xcode](https://img.shields.io/badge/xcode-v12.4-blue?logo=xcode)](https://developer.apple.com/kr/xcode/)
 [![CocoaPods](https://img.shields.io/badge/CocoaPods-v1.10.0-blue?logo=CocoaPods)](https://cocoapods.org/)
@@ -15,6 +14,18 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 </div>
+
+### 라이브러리
+
+| 라이브러리(Library)    | 목적(Purpose)             | 버전(VersionA                                                 |
+| ------------------- | ------------------------ | ------------------------------------------------------------ |
+| Moya                | 서버 통신                  | ![Moya](https://img.shields.io/badge/Moya-14.0.0-orange) |
+| Kingfisher          | 이미지 처리                 | ![Kingfisher](https://img.shields.io/badge/Kingfisher-6.0.1-yellow) |
+| SnapKit             | 오토레이아웃                | ![Kingfisher](https://img.shields.io/badge/SnapKit-5.0.1-black) |
+| Then                | 짧은 코드 처리              | ![Kingfisher](https://img.shields.io/badge/Then-2.7.0-white) |
+| RxSwift             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.2-green) |
+| RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.1-skyblue) |
+
 ## install
 
 ```
