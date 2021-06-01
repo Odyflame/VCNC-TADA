@@ -40,7 +40,7 @@ extension RideEstimationsService: TargetType {
     var task: Task {
         switch self {
         case .getRideEstimations: return .requestPlain
-        case .getRideEstimationsWithCoupon(let coupon): return .requestParameters(parameters: ["coupon": coupon], encoding: JsonEncoding.default)
+        case .getRideEstimationsWithCoupon(let coupon): return .requestParameters(parameters: ["coupon": coupon], encoding: URLEncoding.default)
         }
     }
     
