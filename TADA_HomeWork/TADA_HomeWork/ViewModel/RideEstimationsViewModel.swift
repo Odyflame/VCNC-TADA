@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 protocol RideEstimationsViewModelOutput {
-    var rideEstimations: BehaviorRelay<[RideEstimation]> { get }
     var liteEstimation: BehaviorRelay<RideEstimation?> { get }
     var plusEstimation: BehaviorRelay<RideEstimation?> { get }
 }
@@ -27,7 +26,7 @@ protocol RideEstimationsViewModelType {
 }
 
 class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsViewModelInput, RideEstimationsViewModelType {
-    var rideEstimations: BehaviorRelay<[RideEstimation]>
+
     var liteEstimation: BehaviorRelay<RideEstimation?>
     var plusEstimation: BehaviorRelay<RideEstimation?>
     
@@ -37,7 +36,6 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
     let disposeBag = DisposeBag()
     
     init() {
-        rideEstimations = BehaviorRelay<[RideEstimation]>(value: [])
         plusEstimation = BehaviorRelay<RideEstimation?>(value: nil)
         liteEstimation = BehaviorRelay<RideEstimation?>(value: nil)
     }
@@ -54,16 +52,8 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
                 }
                 
                 print("getRideEstimations 된다")
+                self.setEstimationValue(value: element.rideEstimations)
                 
-                element.rideEstimations.forEach {
-                    switch $0.rideType.value {
-                    case "LITE": self.liteEstimation.accept($0)
-                    case "PLUS": self.plusEstimation.accept($0)
-                    default: break
-                    }
-                }
-                
-                self.rideEstimations.accept(element.rideEstimations)
             }.disposed(by: disposeBag)
     }
     
@@ -79,7 +69,18 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
                 }
                 
                 print("getRideEstimationsWithCoupon 된다")
-                self.rideEstimations.accept(element.rideEstimations)
+                self.setEstimationValue(value: element.rideEstimations)
+                
             }.disposed(by: disposeBag)
+    }
+    
+    private func setEstimationValue(value: [RideEstimation]) {
+        value.forEach {
+            switch $0.rideType.value {
+            case "LITE": self.liteEstimation.accept($0)
+            case "PLUS": self.plusEstimation.accept($0)
+            default: break
+            }
+        }
     }
 }
