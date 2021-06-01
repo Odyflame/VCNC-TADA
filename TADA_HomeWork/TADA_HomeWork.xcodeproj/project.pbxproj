@@ -22,7 +22,7 @@
 		187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517826608781008E25EB /* RideEstimationsViewModel.swift */; };
 		187B517B2660A9C7008E25EB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517A2660A9C7008E25EB /* String+.swift */; };
 		187B517D2660E37C008E25EB /* AlertCarAvailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */; };
-		188EC2D126637946008B4B38 /* ToastMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC2D026637946008B4B38 /* ToastMessageView.swift */; };
+		188EC2D126637946008B4B38 /* ToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC2D026637946008B4B38 /* ToastMessage.swift */; };
 		188EC2D32663975E008B4B38 /* RideStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC2D22663975E008B4B38 /* RideStatusViewModel.swift */; };
 		18FB7A61265F925A0031BCD1 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A60265F925A0031BCD1 /* BaseURL.swift */; };
 		18FB7A63265F92950031BCD1 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB7A62265F92950031BCD1 /* BaseManager.swift */; };
@@ -101,7 +101,7 @@
 		187B517826608781008E25EB /* RideEstimationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationsViewModel.swift; sourceTree = "<group>"; };
 		187B517A2660A9C7008E25EB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCarAvailableView.swift; sourceTree = "<group>"; };
-		188EC2D026637946008B4B38 /* ToastMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessageView.swift; sourceTree = "<group>"; };
+		188EC2D026637946008B4B38 /* ToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessage.swift; sourceTree = "<group>"; };
 		188EC2D22663975E008B4B38 /* RideStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideStatusViewModel.swift; sourceTree = "<group>"; };
 		18FB7A60265F925A0031BCD1 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		18FB7A62265F92950031BCD1 /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
@@ -189,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				187B517726608769008E25EB /* ViewModel */,
-				184C916A265E93F900C53BBD /* Splash */,
 				184C9169265E931E00C53BBD /* ChooseOption */,
 				184C9168265E92DC00C53BBD /* RegisterCoupon */,
 				184C9167265E92D300C53BBD /* Utils */,
@@ -240,19 +239,12 @@
 			isa = PBXGroup;
 			children = (
 				184C916D265E955F00C53BBD /* ChooseOptionViewController.swift */,
-				188EC2D026637946008B4B38 /* ToastMessageView.swift */,
+				188EC2D026637946008B4B38 /* ToastMessage.swift */,
 				187B517326607D71008E25EB /* CarOptionView.swift */,
 				187B517C2660E37C008E25EB /* AlertCarAvailableView.swift */,
 				187B517526607D85008E25EB /* CouponRegisterView.swift */,
 			);
 			path = ChooseOption;
-			sourceTree = "<group>";
-		};
-		184C916A265E93F900C53BBD /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		184C916F265E983800C53BBD /* Extension */ = {
@@ -668,7 +660,7 @@
 				188EC2D32663975E008B4B38 /* RideStatusViewModel.swift in Sources */,
 				187B517426607D71008E25EB /* CarOptionView.swift in Sources */,
 				184C9138265E8F3100C53BBD /* AppDelegate.swift in Sources */,
-				188EC2D126637946008B4B38 /* ToastMessageView.swift in Sources */,
+				188EC2D126637946008B4B38 /* ToastMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

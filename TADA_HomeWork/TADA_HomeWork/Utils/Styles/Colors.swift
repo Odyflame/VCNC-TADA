@@ -16,4 +16,6 @@ struct Color {
     static let carDescription = UIColor(named: "CarDescriptionColor")
     static let couponPlaceHolder = UIColor(named: "CouponPlaceHolderColor")
     static let couponRegisterColor = UIColor(named: "CouponRegisterColor")
+    static let buttonBorderColor = UIColor(named: "ButtonBorderColor")
+    static let couponStrokeColor = UIColor(named: "CouponStrokeColor")
 }

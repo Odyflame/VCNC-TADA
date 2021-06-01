@@ -42,6 +42,7 @@ class CouponRegisterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configureLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -52,14 +53,13 @@ class CouponRegisterView: UIView {
         addSubview(couponStackView)
         
         couponStackView.snp.makeConstraints { make in
-            
+            make.leading.trailing.top.bottom.equalTo(self)
         }
     }
     
     func configure(couponName: String) {
         couponDescription.text = couponName
         couponStatus.textColor = Color.couponRegisterColor
-        
         isRegisterCoupon = true
     }
     

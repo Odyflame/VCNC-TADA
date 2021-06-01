@@ -41,6 +41,7 @@ class RideStatusViewModel: RideStatusViewModelInput, RideStatusViewModelOutput, 
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe { [weak self] response in
+    
                 guard let self = self,
                       let element = response.element else {
                     return

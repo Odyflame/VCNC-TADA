@@ -89,6 +89,9 @@ class ChooseOptionViewController: UIViewController {
         toastViewModel.output.rideToast
             .subscribe(onNext: { [weak self] result in
                 
+                guard !result.isEmpty else {
+                    return
+                }
                 self?.showToast(message: result)
                 
             }).disposed(by: disposeBag)
@@ -138,7 +141,8 @@ class ChooseOptionViewController: UIViewController {
         }
         
         couponView.snp.makeConstraints { make in
-            make.leading.trailing.equalTo(contentView)
+            make.leading.greaterThanOrEqualTo(contentView).offset(124)
+            make.trailing.greaterThanOrEqualTo(contentView).offset(-127)
             make.top.lessThanOrEqualTo(plusCarView.snp.bottom).offset(28)
             make.bottom.lessThanOrEqualTo(callButton.snp.top).offset(-28)
         }
@@ -155,12 +159,21 @@ class ChooseOptionViewController: UIViewController {
     func selectLiteOption(_ sender: UITapGestureRecognizer) {
         
         updateOptionView(to: liteCarView, from: plusCarView)
+        guard let text = liteCarView.carName.text else {
+            return
+        }
+        toastViewModel.input.getToastMessage(message: text)
     }
     
     @objc
     func selectPlusOption(_ sender: UITapGestureRecognizer) {
         
         updateOptionView(to: plusCarView, from: liteCarView)
+        guard let text = plusCarView.carName.text else {
+            return
+        }
+        print("\(text)")
+        toastViewModel.input.getToastMessage(message: text)
     }
     
     func updateOptionView(to selectedView: CarOptionView, from deSelected: CarOptionView) {
@@ -184,19 +197,23 @@ class ChooseOptionViewController: UIViewController {
     }
     
     func showToast(message: String ) {
-        let toastLabel = ToastMessageView()
-        toastLabel.configure(message: message)
+        let toastLabel = ToastMessage(message: message)
         
         self.view.addSubview(toastLabel)
+        
+        toastLabel.snp.makeConstraints { make in
+            make.leading.equalTo(self.view.snp.leading).offset(15)
+            make.bottom.equalTo(contentView.snp.top).offset(-17)
+        }
+        
         UIView.animate(
             withDuration: 4.0,
-            delay: 0.3,
+            delay: 0,
             options: .curveEaseOut) {
             toastLabel.alpha = 0
         } completion: { _ in
             toastLabel.removeFromSuperview()
         }
-
     }
     
 }

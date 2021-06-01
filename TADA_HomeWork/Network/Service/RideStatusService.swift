@@ -37,7 +37,7 @@ extension RideStatusService: TargetType {
     
     var task: Task {
         switch self {
-        case .getRideStatus(let rideType): return .requestParameters(parameters: ["rideType": rideType], encoding: JsonEncoding.default)
+        case .getRideStatus(let rideType): return .requestParameters(parameters: ["rideType": rideType], encoding: URLEncoding.default)
         }
     }
     

@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import Moya
 
 public class RideStatusManager {
     public static let shared = RideStatusManager()
@@ -23,4 +24,10 @@ public class RideStatusController {
             .map(RideStatus.self)
             .asObservable()
     }
+    
+//    public func getRideStatus(rideType: String) -> Observable<Response>{
+//        serviceManger.provider.rx
+//            .request(RideStatusService.getRideStatus(rideType: rideType))
+//            .asObservable()
+//    }
 }
