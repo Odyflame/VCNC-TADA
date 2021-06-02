@@ -23,7 +23,6 @@ target 'TADA_HomeWork' do
 
   # Pods for TADA_HomeWork
   basicFrameworks
-  pod "KeyboardObserver", '~> 2.1'
   pod 'SnapKit', '~> 5.0.0'
   pod 'Kingfisher', '~> 6.0'
   pod 'Then'
