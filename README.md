@@ -33,7 +33,13 @@ pod init
 pod install
 ```
 
-## 해당 과제의 요구사항 List
+## 📦 Added Func List
+다크모드 지원
+* 낮과 밤의 시간대에 맞게 다크모드 지원
+App Icon 설정
+* Figma에 없는 app icon 설정
+
+## 📋 해당 과제의 요구사항 List
 - [x] Deployment Target iOS 11.0 이상, Swift 로 작성합니다.
 - [x] UIKit, SwiftUI 모두 사용가능합니다. 
 - [x] Storyboard, XIB, 코드로 UI 구성 가능합니다.
