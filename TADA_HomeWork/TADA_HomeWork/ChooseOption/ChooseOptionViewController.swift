@@ -10,12 +10,14 @@ import SnapKit
 import Then
 import RxSwift
 import RxCocoa
-import Network
 
 class ChooseOptionViewController: UIViewController {
     
     enum Constant {
         static let height: CGFloat = 74
+        static let noCarLabel = "차가 없네요!"
+        static let selectCarLabel = "먼저 차량을 선택해주세요!"
+        static let confirmLabel = "Confirm"
     }
     
     lazy var contentView = UILabel().then {
@@ -73,10 +75,10 @@ class ChooseOptionViewController: UIViewController {
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
-                    print("liteEstimation 왜안되지?")
+                    
                     return
                 }
-                print("liteEstimation 왜되지?")
+                
                 self.liteCarView.configure(data: result)
                 
             }).disposed(by: disposeBag)
@@ -85,10 +87,10 @@ class ChooseOptionViewController: UIViewController {
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
-                    print("liteEstimation 왜안되지?")
+                    
                     return
                 }
-                print("plusEstimation 왜되지?")
+                
                 self.plusCarView.configure(data: result)
                 
             }).disposed(by: disposeBag)
@@ -118,10 +120,10 @@ class ChooseOptionViewController: UIViewController {
         
     }
     
-    func presentAlert(title: String = "차가 없네요!", message: String? = "먼저 차량을 선택해주세요!") {
+    func presentAlert(title: String = Constant.noCarLabel, message: String? = Constant.selectCarLabel) {
         let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Confirm", style: .default, handler: nil)
+        let action = UIAlertAction(title: Constant.confirmLabel, style: .default, handler: nil)
         alertView.addAction(action)
         self.present(alertView, animated: true, completion: nil)
     }
