@@ -47,3 +47,6 @@ App Icon 설정
 - [x] cocoapods, carthage 등 빌드에 필요한 과정이 있으면 알려주세요.
 - [x] API 요청이 실패할 가능성을 고려해서 코드를 작성해주세요.
 - [x] 위에 명시되지 않은 부분들을 구현하는 것은 자유지만 너무 오랜 시간을 쓰지 마세요.
+
+## 레퍼런스
+[과제](https://www.notion.so/VCNC-96c83e2a04fd4ae9adcb3246fc2ef2e6)
