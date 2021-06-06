@@ -10,18 +10,13 @@ import SnapKit
 import Then
 import Network
 
-class CouponRegisterView: UIView {
+final class CouponRegisterView: UIView {
 
     enum Constant {
         static let couponEmptyLabel = "보유한 쿠폰 없음"
         static let couponRegisterdLabel = "쿠폰 적용됨"
     }
-    
-    lazy var couponStackView = UIStackView(arrangedSubviews: [couponImage, couponDescriptionStackView]).then {
-        $0.axis = .horizontal
-        $0.spacing = 5
-    }
-    
+
     lazy var couponImage = UIImageView().then {
         $0.image = UIImage(named: "btn_coupon_edit")
     }
@@ -55,10 +50,17 @@ class CouponRegisterView: UIView {
     }
     
     func configureLayout() {
-        addSubview(couponStackView)
+        addSubview(couponImage)
+        addSubview(couponDescriptionStackView)
         
-        couponStackView.snp.makeConstraints { make in
-            make.leading.trailing.top.bottom.equalTo(self)
+        couponImage.snp.makeConstraints { make in
+            make.leading.equalTo(self)
+            make.centerY.equalTo(self)
+        }
+        
+        couponDescriptionStackView.snp.makeConstraints { make in
+            make.leading.equalTo(couponImage.snp.trailing).offset(5)
+            make.top.trailing.bottom.equalTo(self)
         }
     }
     

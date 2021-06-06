@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class ToastMessage: UIView {
+final class ToastMessage: UIView {
     lazy var toastLabel = UILabel().then {
         $0.textColor = Color.black
         $0.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 13)

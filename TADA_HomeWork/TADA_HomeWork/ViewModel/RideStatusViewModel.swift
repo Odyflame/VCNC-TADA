@@ -23,7 +23,7 @@ protocol RideStatusViewModelType {
     var output: RideStatusViewModelOutput { get }
 }
 
-class RideStatusViewModel: RideStatusViewModelInput, RideStatusViewModelOutput, RideStatusViewModelType {
+final class RideStatusViewModel: RideStatusViewModelInput, RideStatusViewModelOutput, RideStatusViewModelType {
     
     var rideToast: BehaviorRelay<String>
     

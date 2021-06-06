@@ -25,7 +25,7 @@ protocol RideEstimationsViewModelType {
     var output: RideEstimationsViewModelOutput { get }
 }
 
-class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsViewModelInput, RideEstimationsViewModelType {
+final class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsViewModelInput, RideEstimationsViewModelType {
 
     var liteEstimation: BehaviorRelay<RideEstimation?>
     var plusEstimation: BehaviorRelay<RideEstimation?>
@@ -51,7 +51,6 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
                     return
                 }
                 
-                print("getRideEstimations 된다")
                 self.setEstimationValue(value: element.rideEstimations)
                 
             }.disposed(by: disposeBag)
@@ -68,7 +67,6 @@ class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstimationsV
                     return
                 }
                 
-                print("getRideEstimationsWithCoupon 된다")
                 self.setEstimationValue(value: element.rideEstimations)
                 
             }.disposed(by: disposeBag)

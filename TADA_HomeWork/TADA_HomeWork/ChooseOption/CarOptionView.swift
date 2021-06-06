@@ -11,11 +11,7 @@ import Then
 import Network
 import Kingfisher
 
-//protocol CarOptionViewDelegate {
-//    func didTap(send title: String)
-//}
-
-class CarOptionView: UIView {
+final class CarOptionView: UIView {
     
     enum Constant {
         static let expectedInitLabel = "예상 X원"
@@ -24,7 +20,7 @@ class CarOptionView: UIView {
     
     lazy var carImage = UIImageView().then {
         // 다른 기본 이미지가 있다면 기본 이미지로 교체할 것
-        // 피그마에는 기본이미지가 없어 어쩔 수 없이 베타이미지로 설정
+        // 피그마에는 기본이미지가 없어 고민하다 어쩔 수 없이 피그마 안에 있는 베타이미지로 설정
         $0.image = UIImage(named: "ic_thumbnail_lite_beta")
     }
     
@@ -63,8 +59,6 @@ class CarOptionView: UIView {
         $0.textColor = Color.couponStrokeColor
     }
     
-    //var delegate: CarOptionViewDelegate?
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureLayout()
@@ -94,8 +88,6 @@ class CarOptionView: UIView {
         costStackView.snp.makeConstraints { make in
             make.trailing.equalTo(self).offset(-22)
             make.centerY.equalTo(self)
-//            make.top.lessThanOrEqualTo(self).offset(29)
-//            make.bottom.lessThanOrEqualTo(self).offset(-29)
             make.width.equalTo(102)
         }
     }
@@ -104,8 +96,8 @@ class CarOptionView: UIView {
         
         // 여기서 많이 이상한데 originalCost와 cost가 있는데 보통 OriginalCost가 더 크고, cost가 할인된 가격을 의미하는 것으로 이해할 텐데
         // original cost가 더 작고, cost가 더 크게 오고 있다.
-        // 또한 사전과제의 예제 동영상을 보면 할인된 가격이 커지고, 원래 가격이 storkeThrough가 되어야 할 텐데 그 반대로 되있는 것이 좀 이상하다.
-        // 확인 부탁드립니다.
+        // 또한 사전과제의 예제 동영상을 보면 할인된 가격이 커지고, 원래 가격이 storkeThrough가 되는게 좀 일반적일 것 같은데 그 반대로 되있는 것이 좀 이상하다.
+        // 혹시 확인 부탁드릴 수 있을까요?
         
         self.carName.text = data.rideType.name
         self.carDescription.text = data.rideType.description

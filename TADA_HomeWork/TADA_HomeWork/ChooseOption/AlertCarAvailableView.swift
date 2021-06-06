@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class AlertCarAvailableView: UIView {
+final class AlertCarAvailableView: UIView {
     
     lazy var alertView = UILabel().then {
         $0.frame = CGRect(x: 0, y: 0, width: 173, height: 36)
