@@ -24,5 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        NotificationCenter.default.post(name: .appDidActive, object: nil)
+    }
 }
 

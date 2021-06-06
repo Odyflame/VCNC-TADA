@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+extension Notification.Name {
+    public static let appDidActive = Notification.Name("AppActive")
+}

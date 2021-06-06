@@ -64,6 +64,17 @@ class ChooseOptionViewController: UIViewController {
         configureLayout()
         bindRx()
         viewModel.input.getRideEstimations()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(getRideEstimations(_:)),
+            name: .appDidActive,
+            object: nil)
+    }
+    
+    @objc
+    func getRideEstimations(_ notification: Notification) {
+        viewModel.input.getRideEstimations()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,11 +82,11 @@ class ChooseOptionViewController: UIViewController {
     }
     
     func bindRx() {
+        
         viewModel.output.liteEstimation
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
-                    
                     return
                 }
                 
@@ -87,7 +98,6 @@ class ChooseOptionViewController: UIViewController {
             .subscribe(onNext: { [weak self] result in
                 guard let self = self,
                       let result = result else {
-                    
                     return
                 }
                 
@@ -116,7 +126,6 @@ class ChooseOptionViewController: UIViewController {
                 self.presentAlert(title: self.selectedOptionName, message: self.couponView.couponStatus.text)
                 
             }).disposed(by: disposeBag)
-        
         
     }
     

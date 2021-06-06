@@ -17,6 +17,7 @@
 		184C917C265E999200C53BBD /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 184C917A265E999200C53BBD /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184C917F265E999200C53BBD /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; };
 		184C9180265E999200C53BBD /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184C9178265E999200C53BBD /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		186239D5266CAE0A0079A81E /* Notification.Name+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186239D4266CAE0A0079A81E /* Notification.Name+.swift */; };
 		187B517426607D71008E25EB /* CarOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517326607D71008E25EB /* CarOptionView.swift */; };
 		187B517626607D85008E25EB /* CouponRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517526607D85008E25EB /* CouponRegisterView.swift */; };
 		187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B517826608781008E25EB /* RideEstimationsViewModel.swift */; };
@@ -96,6 +97,7 @@
 		184C9178265E999200C53BBD /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C917A265E999200C53BBD /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		184C917B265E999200C53BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186239D4266CAE0A0079A81E /* Notification.Name+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+.swift"; sourceTree = "<group>"; };
 		187B517326607D71008E25EB /* CarOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOptionView.swift; sourceTree = "<group>"; };
 		187B517526607D85008E25EB /* CouponRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRegisterView.swift; sourceTree = "<group>"; };
 		187B517826608781008E25EB /* RideEstimationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideEstimationsViewModel.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				187B517A2660A9C7008E25EB /* String+.swift */,
+				186239D4266CAE0A0079A81E /* Notification.Name+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				18FB7A73265FA18B0031BCD1 /* RegisterCouponViewController.swift in Sources */,
 				187B517D2660E37C008E25EB /* AlertCarAvailableView.swift in Sources */,
 				187B517B2660A9C7008E25EB /* String+.swift in Sources */,
+				186239D5266CAE0A0079A81E /* Notification.Name+.swift in Sources */,
 				187B517926608781008E25EB /* RideEstimationsViewModel.swift in Sources */,
 				184C9172265E985500C53BBD /* Colors.swift in Sources */,
 				187B517626607D85008E25EB /* CouponRegisterView.swift in Sources */,
