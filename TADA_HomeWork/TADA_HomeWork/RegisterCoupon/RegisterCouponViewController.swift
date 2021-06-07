@@ -26,6 +26,8 @@ class RegisterCouponViewController: UIViewController {
         static let ResigerRightText = "쿠폰 이름을 정확히 입력해주세요"
     }
     
+    // 피그마에 화살표 아이콘이 없어서 그냥 title은 navigationitem의 타이틀로 대체했습니다
+    
     lazy var couponRegisterDescriptionLabel = UILabel().then {
         $0.textColor = Color.black
         $0.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 14)

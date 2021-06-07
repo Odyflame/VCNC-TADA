@@ -74,7 +74,16 @@ class ChooseOptionViewController: UIViewController {
     
     @objc
     func getRideEstimations(_ notification: Notification) {
-        viewModel.input.getRideEstimations()
+        
+        guard let coupone = couponView.couponDescription.text,
+              couponView.isRegisterCoupon else {
+            viewModel.input.getRideEstimations()
+            couponView.configureInit()
+            return
+        }
+        
+        viewModel.input.getRideEstimationsWithCoupon(coupon: coupone)
+        couponView.configure(couponName: coupone)
     }
     
     override func viewWillAppear(_ animated: Bool) {
