@@ -24,7 +24,7 @@
 | SnapKit             | 오토레이아웃                | ![Kingfisher](https://img.shields.io/badge/SnapKit-5.0.1-black) |
 | Then                | 짧은 코드 처리              | ![Kingfisher](https://img.shields.io/badge/Then-2.7.0-white) |
 | RxSwift             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.2-green) |
-| RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.1-skyblue) |
+| RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxCocoa-5.1.1-skyblue) |
 
 ## install
 
