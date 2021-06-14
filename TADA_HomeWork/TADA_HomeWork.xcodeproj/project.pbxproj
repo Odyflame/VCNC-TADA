@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18215C5E266F31BE002FAE49 /* Network_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18215C5D266F31BE002FAE49 /* Network_tests.swift */; };
 		184C9138265E8F3100C53BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C9137265E8F3100C53BBD /* AppDelegate.swift */; };
 		184C9141265E8F3200C53BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184C9140265E8F3200C53BBD /* Assets.xcassets */; };
 		184C9144265E8F3200C53BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184C9142265E8F3200C53BBD /* LaunchScreen.storyboard */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		021ECC69ACD5B3E5BB60CEB0 /* Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork-TADA_HomeWorkUITests/Pods-TADA_HomeWork-TADA_HomeWorkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1173345929DC7A2C31436A09 /* Pods-TADA_HomeWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TADA_HomeWork.release.xcconfig"; path = "Target Support Files/Pods-TADA_HomeWork/Pods-TADA_HomeWork.release.xcconfig"; sourceTree = "<group>"; };
+		18215C5D266F31BE002FAE49 /* Network_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_tests.swift; sourceTree = "<group>"; };
 		184C9134265E8F3100C53BBD /* TADA_HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TADA_HomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184C9137265E8F3100C53BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184C9140265E8F3200C53BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18215C5C266F31A8002FAE49 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				18215C5D266F31BE002FAE49 /* Network_tests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		184C912B265E8F3100C53BBD = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +215,7 @@
 		184C914D265E8F3300C53BBD /* TADA_HomeWorkTests */ = {
 			isa = PBXGroup;
 			children = (
+				18215C5C266F31A8002FAE49 /* Network */,
 				184C914E265E8F3300C53BBD /* TADA_HomeWorkTests.swift */,
 				184C9150265E8F3300C53BBD /* Info.plist */,
 			);
@@ -672,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18215C5E266F31BE002FAE49 /* Network_tests.swift in Sources */,
 				184C914F265E8F3300C53BBD /* TADA_HomeWorkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
