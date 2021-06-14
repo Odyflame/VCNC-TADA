@@ -39,7 +39,9 @@ App Icon 설정
 * Figma에 없는 app icon 설정
 
 ## 📸 App ScreenShot
+
 |![Main](https://user-images.githubusercontent.com/44191131/121837144-e4b1e780-cd0f-11eb-9f1b-288c76b4b0d6.PNG) | ![IMG_1431](https://user-images.githubusercontent.com/44191131/121837153-e7acd800-cd0f-11eb-9282-d83780437cca.PNG) |
+|----|-----|
 
 
 ## 📋 해당 과제의 요구사항 List
