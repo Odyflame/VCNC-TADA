@@ -24,12 +24,11 @@
 | SnapKit             | 오토레이아웃                | ![Kingfisher](https://img.shields.io/badge/SnapKit-5.0.1-black) |
 | Then                | 짧은 코드 처리              | ![Kingfisher](https://img.shields.io/badge/Then-2.7.0-white) |
 | RxSwift             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.2-green) |
-| RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.1-skyblue) |
+| RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxCocoa-5.1.1-skyblue) |
 
 ## install
 
 ```
-pod init
 pod install
 ```
 
@@ -38,6 +37,12 @@ pod install
 * 낮과 밤의 시간대에 맞게 다크모드 지원
 App Icon 설정
 * Figma에 없는 app icon 설정
+
+## 📸 App ScreenShot
+
+|![Main](https://user-images.githubusercontent.com/44191131/121837153-e7acd800-cd0f-11eb-9282-d83780437cca.PNG) | ![Coupon](https://user-images.githubusercontent.com/44191131/121837144-e4b1e780-cd0f-11eb-9f1b-288c76b4b0d6.PNG) 
+|----|-----|
+
 
 ## 📋 해당 과제의 요구사항 List
 - [x] Deployment Target iOS 11.0 이상, Swift 로 작성합니다.
