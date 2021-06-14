@@ -29,7 +29,6 @@
 ## install
 
 ```
-pod init
 pod install
 ```
 
