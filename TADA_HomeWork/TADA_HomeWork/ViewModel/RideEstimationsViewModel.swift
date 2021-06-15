@@ -47,7 +47,6 @@ final class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstima
             .subscribe { [weak self] response in
                 guard let self = self,
                       let element = response.element else {
-                    
                     return
                 }
                 
@@ -63,7 +62,6 @@ final class RideEstimationsViewModel: RideEstimationsViewModelOutput, RideEstima
             .subscribe { [weak self] response in
                 guard let self = self,
                       let element = response.element else {
-                    
                     return
                 }
                 
