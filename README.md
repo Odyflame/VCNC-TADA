@@ -13,8 +13,6 @@
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/Odyflame/VCNC-TADA)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-</div>
-
 ### 라이브러리
 
 | 라이브러리(Library)    | 목적(Purpose)             | 버전(VersionA                                                 |
@@ -25,6 +23,8 @@
 | Then                | 짧은 코드 처리              | ![Kingfisher](https://img.shields.io/badge/Then-2.7.0-white) |
 | RxSwift             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxSwift-5.1.2-green) |
 | RxCocoa             | Reactive programming     | ![lottie-ios](https://img.shields.io/badge/RxCocoa-5.1.1-skyblue) |
+
+</div>
 
 ## install
 
